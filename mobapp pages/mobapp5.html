@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<title>design5</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<head>
+<style type="text/css">
+
+	@media only screen and (max-width: 400px) {
+  body {
+    background-color: ;
+    color: #999;
+	font-family: 'Roboto', sans-serif;
+  }
+}
+	
+	.form-control, .form-control:focus, .input-group-addon {
+		border-color: #B2DDC1;
+        border-radius: 0;
+	}
+
+
+	.signup-form {
+		width: 390px;
+		margin: 0px auto;
+		
+		
+	}
+	.signup-form h2 {
+		color: #636363;
+        margin: 0 0 25px;
+		text-align: center;
+    }
+    .signup-form .lead {
+        font-size: 18px;
+	
+	
+	}
+    .signup-form form {		
+		border-radius: 5px;
+    	margin-bottom: 25px;
+        background: #fff;
+	
+        
+    }
+	.signup-form .form-group {
+		margin-bottom: 25px;
+
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.signup-form .form-control {
+		min-height: 25px;
+		box-shadow: none !important;
+		border-width: 0 0 1px 0;
+
+	}	
+	.signup-form .input-group-addon {
+	
+		text-align: right;
+		background: none;
+		border-width: 0 0 0 0;
+		
+	}
+    
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #179b81;
+	}
+	.signup-form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}	
+	.signup-form a:hover {
+		text-decoration: underline;
+	}
+	
+
+#icon {
+  object-fit: cover;
+  object-position: center;
+padding-bottom: 10px;
+  width: 33%;
+  margin-top: 3%;
+
+
+}
+
+button.btn.btn-outline-secondary.btn2.mx-3  {
+    border-radius: 30px;
+    padding: 15px 38px;
+    border-color: #B2DDC1;
+    !important: ;
+    background-color: #B2DDC1;
+    color: white;
+    text-shadow: 5px;
+    margin-top: -15px;
+    
+
+
+}
+
+
+.button-change{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: px;
+     
+
+}
+
+
+.field-icon {
+  float: right;
+  margin-left: 350px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 2;
+
+  color:#c4c4c4;
+}
+
+
+</style>
+</head>
+ 
+<body>
+<div class="container-fluid"  >
+<div class="row">
+	
+
+<div class="signup-form">	
+    <form action="/examples/actions/confirmation.php" method="post">
+    	<center><img src="output-onlinepngtools.png" id="icon" alt="User Icon" /></center>
+		<h2 class="text-center" style="font-family: pt sans serif">CREATE YOUR ACCOUNT</h2>
+		
+         <div class="form-group" >
+			<div class="input-group">
+				<span class="input-group-addon"><i class="text-left"></i></span>
+				<input type="email" class="form-control" name="name" placeholder="Name" required="required">
+			</div>
+     </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="text-left"></i></span>
+				<input type="email" class="form-control " name="email" placeholder="Email " required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class=""></i></span>
+				<input type="text" class="form-control" name="firstname" placeholder="Mobile Numbe" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class=""></i></span>
+				<input type="text" class="form-control" name="digit" placeholder="Address pincode" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class=""></i></span>
+				<input type="text" class="form-control" name="digit" placeholder="password" required="required">
+			</div>
+        </div>
+
+
+
+
+<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon "><span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span><i class=""></i></span>
+				
+
+			</div>
+
+        </div>
+		
+      
+		<div class=" button-change p">
+            <button type="button" class="btn btn-outline-secondary btn2 mx-3" style="">Create account</button>
+        </div>
+		
+
+
+
+		
+		
+		 
+    </form>
+
+
+		
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+</script>>
+</body>
+</html>

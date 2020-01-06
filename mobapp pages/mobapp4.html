@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mobapp4</title>
+	<style type="text/css">
+		
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  
+}
+
+#formContent {
+	width: 100%;
+  max-width: 480px;
+   position: relative;
+ text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: 	#7FD182;
+
+  border: none;
+  color: white;
+  width: 460px;
+  height: 75px;
+  text-decoration: none;
+  display: inline-block;
+ 
+  font-size: 22px;
+  
+  margin-top: 30px;
+ border-top:  1.56px solid #C4CEB3;
+  }
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color:#7FD182;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  padding: 21px 32px;
+   text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  width:95%;
+  border: 1.6px solid #C4CEB3;
+  color: #CFF9C7;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid ;
+}
+
+
+
+x
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:42%;
+  padding-bottom: 30px;
+
+}
+
+.underlineHover{
+  color: white;
+  font-family: myriad,arial;
+  font-size: 19px; 
+}
+		
+
+
+
+	</style>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="wrapper fadeInDown" style="background-color: #B2DDC1;">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first" style="background-color: ">
+      <img src="output-onlinepngtools.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email" style="">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Login">
+
+      
+    </form>
+<div class="pt-3">
+   <a class="underlineHover" href="#">Forgot Password?</a>
+</div>
+
+   <div id="formFooter " style="color: white;" >Don't have an account?
+      <a class="underlineHover" href="#">Create New</a>
+    </div>
+
+
+  </div>
+</div>
+</body>
+</html>

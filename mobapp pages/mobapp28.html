@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mobapp28</title>
+	<style type="text/css">
+		
+html,
+body {
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #B2DDC1;
+}
+
+/* Circle */
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+   position: fixed;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle:before,
+.circle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  border: 1.1px solid #fffefeba;
+  border-radius: 50%;
+}
+
+
+.circle:before {
+  animation: ripple 2s linear  infinite;
+}
+
+.circle:after {
+  animation: ripple 2s linear 1s infinite;
+}
+
+@keyframes ripple{
+  0% { transform: scale(1); }
+  50% { transform: scale(3); opacity:1; }
+  100% { transform: scale(4); opacity:0; }
+}
+
+/* Text */
+.text {
+  text-align: left;
+ 
+  
+  
+}
+
+
+
+.col-md-12.height1{
+	height: 60vh;
+	
+}
+.col-md-12.height2{
+height: 40vh;
+
+}
+.circular--square {
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  border: 3px solid #FFFFFF;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+}
+
+
+.circle-icon {
+    background: #aba9a959;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 25px;
+    color: white;
+    background-color: red;
+
+}
+
+.text-center{
+	font-size: 24px;
+	font-family: sans-serif	;
+}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</heads>
+<body>
+	<div class="container-fluid" style=" background: linear-gradient(to bottom, #9eddcf, #b2ddc1)";
+}>
+		<div class="row">
+			<div class="col-md-12 height1" style="background-color: ">
+				<div class="circle">
+	<img class="circular--square" src="ritikaamruorg.jpeg" />
+</div>
+</div>
+
+			<div class="col-md-12 height2 pt-5" style="background-color: "> 
+				<div class="text-center"><font color="white" style="font-size: 22px;">Connecting to</font> Ritika Amru</div>
+				<div class="d-flex justify-content-center pt-5">
+
+			<i class="fa fa-phone fa-4x circle-icon color-red" aria-hidden="true"></i>
+		</div>
+		
+				</div>
+		</div>
+	</div>
+</body> 
+</html>
